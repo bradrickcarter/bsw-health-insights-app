@@ -1,0 +1,74 @@
+.card {
+  border: 1.5px solid #DDDDDD;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: opacity 0.25s ease;
+}
+
+.deltaRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.deltaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deltaText {
+  font-size: 13px;
+  color: #586F78;
+}
+
+.deltaText strong {
+  color: #364248;
+  font-weight: 600;
+}
+
+.testName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #364248;
+  margin-bottom: 4px;
+}
+
+.testMeta {
+  font-size: 13px;
+  color: #586F78;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.testMeta strong {
+  font-weight: 600;
+}
+
+.testResult {
+  font-size: 13px;
+  color: #364248;
+  font-weight: 400;
+}
+
+.testResult strong {
+  font-weight: 600;
+}
+
+.viewTrends {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  color: #007EB4;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #DDDDDD;
+  cursor: pointer;
+}

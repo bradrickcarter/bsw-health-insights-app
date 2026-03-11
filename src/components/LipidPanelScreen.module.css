@@ -1,0 +1,112 @@
+.screen {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 20px 40px;
+}
+
+.panelTitle {
+  font-size: 28px;
+  font-weight: 400;
+  color: #364248;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.panelDesc {
+  font-size: 15px;
+  color: #586F78;
+  line-height: 1.55;
+}
+
+.divider {
+  height: 1px;
+  background: #DDDDDD;
+  margin: 20px 0;
+}
+
+.drawDate {
+  font-size: 17px;
+  font-weight: 700;
+  color: #364248;
+  margin-bottom: 32px;
+}
+
+/* ── FILTER BUTTONS ── */
+.rangeSummary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.rangeCard {
+  border: 1.5px solid #DDDDDD;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.15s;
+  user-select: none;
+}
+
+.rangeCard:hover {
+  background: #FAFAFA;
+}
+
+.rangeCard.active {
+  border: 2px solid #007EB4;
+  background: #F5FEFF;
+}
+
+.rangeNum {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Google Sans', sans-serif;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.rangeLabel {
+  font-size: 13px;
+  color: #586F78;
+}
+
+/* ── LAB INSIGHTS ── */
+.insightsCard {
+  border: 1.5px solid #DDDDDD;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.insightsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.insightsTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #364248;
+}
+
+.insightsSub {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #8F659C;
+  font-weight: 500;
+}
+
+.insightsChevron {
+  color: #999;
+  font-size: 18px;
+}

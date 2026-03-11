@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E8E8E8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 40px 16px;
+}
+
+/* iOS-style scrollbar — hidden by default, fades in on scroll */
+.screen {
+  scrollbar-width: none; /* Firefox: hide native */
+  cursor: grab;
+}
+
+.screen:active {
+  cursor: grabbing;
+}
+
+.screen::-webkit-scrollbar {
+  width: 3px;
+}
+
+.screen::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.screen::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.screen.is-scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+@keyframes barGrow {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}

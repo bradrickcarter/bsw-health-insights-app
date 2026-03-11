@@ -1,0 +1,53 @@
+.phone {
+  width: 393px;
+  height: 852px;
+  background: #fff;
+  border-radius: 52px;
+  box-shadow:
+    0 0 0 10px #1A1A1A,
+    0 0 0 12px #333,
+    0 32px 80px rgba(0, 0, 0, 0.35),
+    0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ── SCREEN NAVIGATION TRACK ── */
+.screenTrack {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  width: 300%;
+  transform: translateX(0);
+  transition: transform 0.38s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  overflow: hidden;
+}
+
+.screenTrackDetail   { transform: translateX(-33.333%); }
+.screenTrackInsights { transform: translateX(-66.666%); }
+
+.screenPanel {
+  width: 33.333%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamicIsland {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 34px;
+  background: #1A1A1A;
+  border-radius: 20px;
+  z-index: 10;
+  pointer-events: none;
+}
