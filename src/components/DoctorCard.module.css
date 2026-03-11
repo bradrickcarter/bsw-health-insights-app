@@ -1,0 +1,84 @@
+.card {
+  border: 1.5px solid #DDDDDD;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #364248;
+}
+
+.role {
+  font-size: 13px;
+  color: #586F78;
+  margin-top: 2px;
+}
+
+.noteWrap {
+  position: relative;
+}
+
+.note {
+  font-size: 14px;
+  color: #586F78;
+  line-height: 1.5;
+  max-height: 5.25em; /* ~3.5 lines collapsed */
+  overflow: hidden;
+  transition: max-height 0.38s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.noteExpanded {
+  max-height: 400px;
+}
+
+.noteFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: linear-gradient(to bottom, transparent, #fff);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.noteExpanded + .noteFade {
+  opacity: 0;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #007EB4;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.readMore svg {
+  transition: transform 0.2s;
+}
+
+.open svg {
+  transform: rotate(180deg);
+}

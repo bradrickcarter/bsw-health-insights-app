@@ -1,0 +1,88 @@
+.tabBar {
+  flex-shrink: 0;
+  height: 62px;
+  background: #fff;
+  border-top: 1px solid #E2E8EC;
+  position: relative;
+  overflow: visible; /* allows Get Care button to float above the bar */
+  z-index: 10;
+}
+
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+/* ── Side tabs ── */
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #8A9BA8;
+  letter-spacing: 0.1px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Center tab ── */
+.tabCenter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* White disc — merges with the tab bar surface and casts an upward shadow */
+.getCareWrapper {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-5px);
+}
+
+.getCareRing {
+  position: absolute;
+  inset: -10px;           /* 10px larger on every side = 72px total */
+  background: #fff;
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* Button floats above — label stays flush with side labels */
+.getCareBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #FBBF24, #F59E0B);
+  box-shadow:
+    0 4px 14px rgba(245, 158, 11, 0.45),
+    0 1px 4px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.labelActive {
+  font-size: 11px;
+  font-weight: 700;
+  color: #364248;
+}

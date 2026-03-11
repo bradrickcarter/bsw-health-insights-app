@@ -1,0 +1,14 @@
+.indicator {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bar {
+  width: 134px;
+  height: 5px;
+  background: #111;
+  border-radius: 99px;
+}
