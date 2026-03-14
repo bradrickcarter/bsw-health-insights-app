@@ -9,12 +9,13 @@
   font-weight: 400;
   color: #364248;
   margin-bottom: 10px;
+  line-height: 1.15;
 }
 
 .desc {
   font-size: 14px;
   color: #586F78;
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 .divider {
@@ -28,6 +29,7 @@
   font-weight: 700;
   color: #364248;
   margin-bottom: 2px;
+  line-height: 1.25;
 }
 
 .sectionSubheading {

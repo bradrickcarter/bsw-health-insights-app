@@ -58,6 +58,9 @@ export default function LabInsightsScreen() {
 
       {/* AI Hero */}
       <div className={styles.heroSection}>
+        <p className={styles.heroText}>
+          Your Lipid Panel shows meaningful progress, but elevated LDL and very high Triglycerides remain your primary cardiovascular concerns — especially given your family history.
+        </p>
         <div className={styles.heroLabel}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M10 3L11.34 8.37L17 10L11.34 11.63L10 17L8.66 11.63L3 10L8.66 8.37L10 3Z" fill="#8F659C"/>
@@ -65,9 +68,6 @@ export default function LabInsightsScreen() {
           </svg>
           AI-Generated Summary · Dec 1, 2025
         </div>
-        <p className={styles.heroText}>
-          Your Lipid Panel shows meaningful progress, but elevated LDL and very high Triglycerides remain your primary cardiovascular concerns — especially given your family history.
-        </p>
       </div>
 
       <div className={styles.divider} />

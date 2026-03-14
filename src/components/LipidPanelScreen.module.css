@@ -9,13 +9,14 @@
   font-weight: 400;
   color: #364248;
   margin-bottom: 12px;
+  line-height: 1.15;
   letter-spacing: -0.5px;
 }
 
 .panelDesc {
   font-size: 15px;
   color: #586F78;
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 .divider {

@@ -5,12 +5,15 @@
 }
 
 body {
-  background: #E8E8E8;
+  background: linear-gradient(160deg, #0D1154 0%, #0B4B9D 55%, #42CCCC 100%);
+  min-height: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
   padding: 40px 16px;
 }
 
